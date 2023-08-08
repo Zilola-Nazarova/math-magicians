@@ -1,8 +1,6 @@
 <h3 align="center"><b>Math Magicians</b></h3>
 
-
 <p align="center">Math Magicians is a Single Page App that allows users to make simple calculations and read a random math-related quote. Built with React.</p>
-
 
 <a name="readme-top"></a> 
 
@@ -66,7 +64,7 @@ It is a Single Page App (SPA) that allows users to:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- use this link to visit and try the [Math Magicians SPA](https://zilola-nazarova.github.io/math-magicians/);
+- coming soon;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
