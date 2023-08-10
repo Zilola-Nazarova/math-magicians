@@ -71,9 +71,9 @@ function Numbers() {
 function Button(props) {
   const { content } = props;
   return (
-    <div className="button">
+    <button type="button" className="button">
       <p>{ content }</p>
-    </div>
+    </button>
   );
 }
 
