@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-p {
+#calculator p {
   margin: 0.5em;
 }
 
@@ -71,4 +71,19 @@ p {
 
 .numbers button:nth-of-type(10) {
   grid-area: 4 / 1 / 5 / 3;
+}
+
+#quote {
+  width: 400px;
+  margin: 3rem 0;
+  text-align: center;
+}
+
+#quote q {
+  font-style: italic;
+}
+
+#quote p {
+  margin-top: 1rem;
+  text-align: right;
 }
