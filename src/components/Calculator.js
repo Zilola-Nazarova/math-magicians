@@ -10,7 +10,7 @@ function Calculator() {
   };
 
   const { total, operation, next } = state;
-  
+
   return (
     <section id="calculator">
       <InputField text={((total || '') + (operation || '') + (next || '')) || '0'} />
