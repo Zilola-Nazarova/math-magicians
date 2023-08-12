@@ -1,33 +1,24 @@
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleStateChange = this.handleStateChange.bind(this);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-  }
+function Calculator() {
+  const [state, setState] = useState({ total: null, next: null, operation: null });
 
-  handleStateChange(button) {
-    this.setState((prevState) => calculate(prevState, button));
-  }
+  const handleStateChange = (button) => {
+    setState((prevState) => calculate(prevState, button));
+  };
 
-  render() {
-    const { total, operation, next } = this.state;
-    return (
-      <section id="calculator">
-        <InputField text={((total || '') + (operation || '') + (next || '')) || '0'} />
-        <Operands performOperation={this.handleStateChange} />
-        <Commands performOperation={this.handleStateChange} />
-        <Numbers performOperation={this.handleStateChange} />
-      </section>
-    );
-  }
+  const { total, operation, next } = state;
+
+  return (
+    <section id="calculator">
+      <InputField text={((total || '') + (operation || '') + (next || '')) || '0'} />
+      <Operands performOperation={handleStateChange} />
+      <Commands performOperation={handleStateChange} />
+      <Numbers performOperation={handleStateChange} />
+    </section>
+  );
 }
 
 function InputField({ text }) {
