@@ -1,0 +1,20 @@
+.home {
+  margin: 2rem;
+  padding: 8%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.home h2 {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 650px) {
+  .home {
+    text-align: left;
+  }
+}
