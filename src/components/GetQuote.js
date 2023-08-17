@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import styles from '../styles/GetQuote.module.css';
 
 const GetQuote = () => {
   const [data, setData] = useState([{ quote: '', author: '' }]);
@@ -27,10 +28,10 @@ const GetQuote = () => {
   if (isLoading) return <div>Loading...</div>;
 
   return (
-    <section id="quote">
+    <div className={styles.quote}>
       <q>{ data[0].quote }</q>
       <p>{ data[0].author }</p>
-    </section>
+    </div>
   );
 };
 
