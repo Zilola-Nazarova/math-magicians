@@ -1,9 +1,10 @@
 import Calculator from '../components/Calculator';
 
 const CalculatorPage = () => (
-  <div className="calculator">
+  <section id="calc-wrapper">
+    <h2>Let&#39;s do some Math!</h2>
     <Calculator />
-  </div>
+  </section>
 );
 
 export default CalculatorPage;

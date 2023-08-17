@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+import styles from '../styles/Calculator.module.css';
 
 const Calculator = () => {
   const [state, setState] = useState({ total: null, next: null, operation: null });
@@ -12,18 +13,18 @@ const Calculator = () => {
   const { total, operation, next } = state;
 
   return (
-    <section id="calculator">
+    <div className={styles.calculator}>
       <InputField text={((total || '') + (operation || '') + (next || '')) || '0'} />
       <Operands performOperation={handleStateChange} />
       <Commands performOperation={handleStateChange} />
       <Numbers performOperation={handleStateChange} />
-    </section>
+    </div>
   );
 };
 
 function InputField({ text }) {
   return (
-    <div className="input">
+    <div className={styles.input}>
       <p>{ text }</p>
     </div>
   );
@@ -35,7 +36,7 @@ function Operands({ performOperation }) {
   };
 
   return (
-    <div className="operands">
+    <div className={styles.operands}>
       <Button content="÷" handleClick={onHandleClick} />
       <Button content="x" handleClick={onHandleClick} />
       <Button content="-" handleClick={onHandleClick} />
@@ -50,7 +51,7 @@ function Commands({ performOperation }) {
     performOperation(e.target.textContent);
   };
   return (
-    <div className="commands">
+    <div className={styles.commands}>
       <Button content="AC" handleClick={onHandleClick} />
       <Button content="+/-" handleClick={onHandleClick} />
       <Button content="%" handleClick={onHandleClick} />
@@ -63,7 +64,7 @@ function Numbers({ performOperation }) {
     performOperation(e.target.textContent);
   };
   return (
-    <div className="numbers">
+    <div className={styles.numbers}>
       <Button content="7" handleClick={onHandleClick} />
       <Button content="8" handleClick={onHandleClick} />
       <Button content="9" handleClick={onHandleClick} />
