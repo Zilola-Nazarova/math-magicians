@@ -4,7 +4,7 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
+  background-color: #fff;
 }
 
 section {
@@ -22,7 +22,7 @@ section {
 h1 {
   font-family: 'Major Mono Display', monospace;
   text-align: center;
-  color:#111111;
+  color: #111;
   padding: 1.5rem 0;
   font-size: 2rem;
 }
@@ -32,7 +32,7 @@ h1 {
 }
 
 nav {
-  background-color: #111111;
+  background-color: #111;
   font-family: 'Titillium Web', sans-serif;
 }
 
@@ -40,8 +40,6 @@ nav ul {
   list-style: none;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* justify-content: center;
-  align-items: stretch; */
 }
 
 nav li {
@@ -54,7 +52,7 @@ a.active {
 }
 
 nav li:not(:last-child) {
-  border-right: 1px solid #f3f3f3;;
+  border-right: 1px solid #f3f3f3;
 }
 
 nav a {
@@ -72,7 +70,7 @@ nav a {
     justify-content: space-between;
     padding: 0 3rem;
     align-items: center;
-    background-color: #111111;
+    background-color: #111;
   }
 
   nav {

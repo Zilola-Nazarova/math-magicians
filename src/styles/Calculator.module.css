@@ -30,7 +30,7 @@
   border: #d1d1d1 1px solid;
   border-bottom: #bababa 1px solid;
   border-right: none;
-  color:#f3f3f3;
+  color: #f3f3f3;
 }
 
 .commands {
@@ -40,10 +40,10 @@
 }
 
 .commands button {
-  background-color: #111111;
+  background-color: #111;
   border: #d1d1d1 1px solid;
   border-bottom: #bababa 1px solid;
-  color:#f3f3f3;
+  color: #f3f3f3;
 }
 
 .numbers {
@@ -54,10 +54,10 @@
 }
 
 .numbers button {
-  background-color: #111111;
+  background-color: #111;
   border: #d1d1d1 1px solid;
   border-bottom: #bababa 1px solid;
-  color:#f3f3f3;
+  color: #f3f3f3;
   font-family: 'Titillium Web', sans-serif;
 }
 
