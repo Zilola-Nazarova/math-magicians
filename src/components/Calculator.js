@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-function Calculator() {
+const Calculator = () => {
   const [state, setState] = useState({ total: null, next: null, operation: null });
 
   const handleStateChange = (button) => {
@@ -19,7 +19,7 @@ function Calculator() {
       <Numbers performOperation={handleStateChange} />
     </section>
   );
-}
+};
 
 function InputField({ text }) {
   return (

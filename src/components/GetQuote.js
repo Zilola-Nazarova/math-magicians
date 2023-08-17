@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-function GetQuote() {
+const GetQuote = () => {
   const [data, setData] = useState([{ quote: '', author: '' }]);
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -32,6 +32,6 @@ function GetQuote() {
       <p>{ data[0].author }</p>
     </section>
   );
-}
+};
 
 export default GetQuote;
