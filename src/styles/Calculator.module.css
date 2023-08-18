@@ -1,22 +1,18 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#calculator p {
+.calculator p {
   margin: 0.5em;
 }
 
-#calculator {
-  width: 400px;
+.calculator {
+  width: 100%;
+  max-width: 400px;
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(6, 1fr);
 }
 
 .input {
-  background-color: #858693;
+  font-family: 'Titillium Web', sans-serif;
+  background-color: #757575;
   grid-area: 1 / 1 / 2 / 3;
   color: #fff;
   font-size: 1.5rem;
@@ -30,10 +26,11 @@
 }
 
 .operands button {
-  background-color: #f39148;
+  background-color: #313131;
   border: #d1d1d1 1px solid;
   border-bottom: #bababa 1px solid;
   border-right: none;
+  color: #f3f3f3;
 }
 
 .commands {
@@ -43,9 +40,10 @@
 }
 
 .commands button {
-  background-color: #e0e0e0;
+  background-color: #111;
   border: #d1d1d1 1px solid;
   border-bottom: #bababa 1px solid;
+  color: #f3f3f3;
 }
 
 .numbers {
@@ -56,9 +54,11 @@
 }
 
 .numbers button {
-  background-color: #e0e0e0;
+  background-color: #111;
   border: #d1d1d1 1px solid;
   border-bottom: #bababa 1px solid;
+  color: #f3f3f3;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 .commands button:nth-of-type(3n+1) {
@@ -71,19 +71,4 @@
 
 .numbers button:nth-of-type(10) {
   grid-area: 4 / 1 / 5 / 3;
-}
-
-#quote {
-  width: 400px;
-  margin: 3rem 0;
-  text-align: center;
-}
-
-#quote q {
-  font-style: italic;
-}
-
-#quote p {
-  margin-top: 1rem;
-  text-align: right;
 }

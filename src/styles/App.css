@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Tilt+Prism&family=Titillium+Web&display=swap');
+
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+section {
+  flex: 2;
+  display: flex;
+}
+
+#calc-wrapper {
+  flex-direction: column;
+  align-items: center;
+  padding: 10%;
+  gap: 3rem;
+}
+
+h1 {
+  font-family: 'Major Mono Display', monospace;
+  text-align: center;
+  color: #111;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+}
+
+#calc-wrapper h2 {
+  font-family: 'Titillium Web', sans-serif;
+}
+
+nav {
+  background-color: #111;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+nav li {
+  padding: 1rem 0 1.2rem;
+  text-align: center;
+}
+
+a.active {
+  border-bottom: 1px solid #f3f3f3;
+}
+
+nav li:not(:last-child) {
+  border-right: 1px solid #f3f3f3;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f3f3f3;
+}
+
+@media only screen and (min-width: 650px) {
+  h1 {
+    color: #f3f3f3;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3rem;
+    align-items: center;
+    background-color: #111;
+  }
+
+  nav {
+    background-color: transparent;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav li {
+    text-align: center;
+    padding: 0.5rem 3rem 0.5rem;
+  }
+
+  nav li:last-child {
+    padding-right: 0;
+  }
+
+  #calc-wrapper {
+    flex-direction: row;
+    align-items: center;
+    gap: 0;
+    padding: 10%;
+    justify-content: space-between;
+  }
+}
