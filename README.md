@@ -64,7 +64,7 @@ It is a Single Page App (SPA) that allows users to:
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- coming soon;
+- use this link to visit and try Math Magicians SPA: https://math-magicians-d69o.onrender.com;
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
